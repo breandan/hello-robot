@@ -64,13 +64,4 @@ constructor(configuration: Configuration) : AbstractSpeechRecognizer(configurati
     fun removeResultListener(listener: ResultListener) {
         recognizer.removeResultListener(listener)
     }
-
-
-    //    public void setMasterGain(double mg) {
-    //        microphone.setMasterGain(mg);
-    //    }
-    //
-    //    public void setNoiseLevel(double mg) {
-    //        microphone.setNoiseLevel(mg);
-    //    }
 }

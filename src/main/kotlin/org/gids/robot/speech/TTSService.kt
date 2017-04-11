@@ -13,7 +13,7 @@ import java.util.logging.Logger
 /**
  * Created by breandan on 7/9/2015.
  */
-object TTSService {
+class TTSService {
     val logger = Logger.getLogger(TTSService::class.java.simpleName)
     private var voice: Voice? = null
     var maryTTS: MaryInterface? = null
@@ -56,7 +56,7 @@ object TTSService {
 }
 
 fun main(args: Array<String>) {
-    val ttService = TTSService
+    val ttService = TTSService()
     val scan = Scanner(System.`in`)
 
     while (true) {

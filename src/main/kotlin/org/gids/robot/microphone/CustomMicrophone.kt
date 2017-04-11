@@ -38,7 +38,6 @@ class CustomMicrophone(sampleRate: Float, sampleSize: Int, signed: Boolean, bigE
                 logger.warning("Microphone: MASTER_GAIN NOT supported")
 
             //masterGainControl = findMGControl(line);
-
         } catch (e: LineUnavailableException) {
             throw IllegalStateException(e)
         }
@@ -66,8 +65,6 @@ class CustomMicrophone(sampleRate: Float, sampleSize: Int, signed: Boolean, bigE
         @Throws(IOException::class)
         fun recordFromMic(duration: Long): File {
             val mic = CustomMicrophone(16000f, 16, true, false)
-
-            //Why is this in a thread?
             Thread {
                 try {
                     Thread.sleep(duration)

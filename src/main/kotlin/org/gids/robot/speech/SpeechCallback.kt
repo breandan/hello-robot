@@ -1,7 +1,6 @@
 package org.gids.robot.speech
 
 import org.gids.robot.tts.TTSService
-import java.util.*
 
 /**
  * Grammar is defined in resources/org.gids.robot/grammars/command.gram
